@@ -95,13 +95,14 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+           "styles": [],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "955fe2c4-21a5-42bd-8d0f-3053231c2cc6"
   }
 }
