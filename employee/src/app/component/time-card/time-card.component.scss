@@ -1,0 +1,57 @@
+table {
+  width: 100%;
+}
+.mat-card{
+  text-align: center;
+  background-color: aliceblue;
+}
+.thead{
+  background-color: rgb(134, 100, 58);
+}
+.mat-elevation-z8{
+  background-color: rgb(101, 160, 114);
+  border-radius: 6px;
+  border: 1px;
+}
+.id{
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: inline-block;
+  padding : 10px 15px;
+}
+.name{
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 10px 15px;
+}
+.date{
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 10px 15px;
+}
+.jirastatus{
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+}
+.checkin{
+  margin-right: 5px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+}
+.checkout{
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+}
+
+
