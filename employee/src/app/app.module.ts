@@ -12,13 +12,25 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import {MatInputModule} from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import {MatIconModule} from '@angular/material/icon';
+import { NavbarComponent } from './navbar/navbar.component';
+import { StatusplanComponent } from './status/statusplan/statusplan.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+
+
 // import { MdbFormsModule } from 'mdb-angular-ui-kit/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     TimeCardComponent,
-    EmployeeDetailsComponent
+    EmployeeDetailsComponent,
+    NavbarComponent,
+    StatusplanComponent
+    
 
   ],
   imports: [
@@ -32,7 +44,12 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
     FormsModule,
     MatCardModule,
     MatDatepickerModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    MatButtonModule,
+    DragDropModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

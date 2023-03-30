@@ -1,4 +1,4 @@
-:host.mat-form-field{
+ :host.mat-form-field{
     width: 100%;
 }
 .example-container {
@@ -55,7 +55,26 @@
   .example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
     transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
   }
-  .container-fluid{
-    background-color: aquamarine;
+  // .container-fluid{
+  //   background-color: rgb(241, 171, 171);
+  // }
+  .head-title{
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(190, 180, 180);
+    border-radius: 4px;
+    color: #df8484;
+    font-size: 1rem;
+    text-align: center;
+    font-weight:600;
+    span{
+      font-weight: normal;
+    }
+
   }
-  
+  .box{
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap:10px;
+
+  }
