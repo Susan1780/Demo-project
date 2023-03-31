@@ -1,4 +1,4 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -12,14 +12,24 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
-// import { MdbFormsModule } from 'mdb-angular-ui-kit/forms';
+import { AddContactComponent } from './component/add-contact/add-contact/add-contact.component';
+import { ContactManagerComponent } from './component/contact-manager/contact-manager/contact-manager.component';
+import { EditContactComponent } from './component/edit-contact/edit-contact/edit-contact.component';
+import { SpinnerComponent } from './component/spinner/spinner/spinner.component';
+import { ViewContactComponent } from './component/view-contact/view-contact/view-contact.component';
+import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TimeCardComponent,
-    EmployeeDetailsComponent
-
+    EmployeeDetailsComponent,
+    AddContactComponent,
+    ContactManagerComponent,
+    EditContactComponent,
+    SpinnerComponent,
+    ViewContactComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
