@@ -1,4 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body{
+    height: 100%;
+    background: linear-gradient(to left, #e6abab, #b0dde6);
+}
+.mat-button.mat-accent,
+.mat-icon-button.mat-accent,
+.mat-stroked-button.mat-accent{
+    color:#00e676
+}
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 body{
   font-family: 'Ubuntu' , sans-serif !important;
