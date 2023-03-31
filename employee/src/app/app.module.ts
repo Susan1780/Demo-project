@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,9 +29,14 @@ import { SpinnerComponent } from './component/spinner/spinner/spinner.component'
 import { ViewContactComponent } from './component/view-contact/view-contact/view-contact.component';
 import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound/pagenotfound.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavComponent } from './header/nav/nav.component';
+
 @NgModule({
   declarations: [
     AppComponent,
+    NavComponent,
+   
     TimeCardComponent,
     EmployeeDetailsComponent,
     NavbarComponent,
@@ -44,6 +51,8 @@ import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound/pag
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSidenavModule,
     MatSlideToggleModule,
     HttpClientModule,
     MatTableModule,
