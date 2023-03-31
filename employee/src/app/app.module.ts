@@ -26,6 +26,7 @@ import { EditContactComponent } from './component/edit-contact/edit-contact/edit
 import { SpinnerComponent } from './component/spinner/spinner/spinner.component';
 import { ViewContactComponent } from './component/view-contact/view-contact/view-contact.component';
 import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound/pagenotfound.component';
+import { LoginComponent } from './component/Login/login/login.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound/pag
     EditContactComponent,
     SpinnerComponent,
     ViewContactComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

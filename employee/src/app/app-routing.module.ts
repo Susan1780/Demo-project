@@ -6,9 +6,11 @@ import { ContactManagerComponent } from './component/contact-manager/contact-man
 import { EditContactComponent } from './component/edit-contact/edit-contact/edit-contact.component';
 import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound/pagenotfound.component';
 import { ViewContactComponent } from './component/view-contact/view-contact/view-contact.component';
+import { LoginComponent } from './component/Login/login/login.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'/contact-manager',pathMatch:'full'},
+  {path:'',redirectTo:'/login',pathMatch:'full'},
+  {path:'login', component:LoginComponent},
   {path:'add-contact', component:AddContactComponent},
   {path:'view-contact',component:ViewContactComponent},
   {path:'edit-contact',component:EditContactComponent},

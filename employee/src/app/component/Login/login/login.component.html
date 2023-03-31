@@ -1,0 +1,17 @@
+<mat-card class="mat-card mt-5">
+  <form [formGroup]="loginform" (ngSubmit)="login()">
+  <div class="cards mt-3">
+  <label for="uname">Username :
+    <input type="text" class="uname" name="uname" placeholder="Enter username" formControlName="name">
+  </label>
+  </div>
+  <div class="pass">
+  <label for="pass">password:
+    <input name="pass" placeholder="enterpassword" formControlName="password">
+  </label>
+  </div>
+  <div class="btn btn-succes mt-3">
+    <button type="submit" [disabled]="!loginform.valid" class="btn btn-primary " aria-pressed="true">Submit</button>
+  </div>
+  </form>
+</mat-card>
