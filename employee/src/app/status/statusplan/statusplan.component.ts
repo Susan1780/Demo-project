@@ -1,17 +1,13 @@
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
-
 import { Component,OnInit } from '@angular/core';
 import{FormGroup,FormBuilder,Validators}from'@angular/forms'
 import { ITask } from 'src/app/task/plan';
-
-
 @Component({
   selector: 'app-statusplan',
   templateUrl: './statusplan.component.html',
   styleUrls: ['./statusplan.component.scss']
 })
-export class StatusplanComponent implements OnInit {
-  
+export class StatusplanComponent implements OnInit {  
   todoForm!:FormGroup;
   tasks :ITask[]=[];
   inprogress:ITask[]=[];
@@ -23,7 +19,6 @@ export class StatusplanComponent implements OnInit {
     this.todoForm=this.fb.group({
       item:['',Validators.required]
     })
-
   }
   addTask(){
     this.tasks.push({
@@ -32,7 +27,6 @@ export class StatusplanComponent implements OnInit {
     });
     this.todoForm.reset()
   }
-
   onEdit(item:ITask, i: number){
     this.todoForm.controls['item'].setValue(item.description);
     this.updateIndex=i;
@@ -47,15 +41,12 @@ export class StatusplanComponent implements OnInit {
   }
   deleteTask(i: number){
     this.tasks.splice(i,1)
-
   }
   deleteInprogress(i: number){
     this.inprogress.splice(i,1)
-
   }
   deleteDone(i: number){
-    this.inprogress.splice(i,1)
-
+    this.done.splice(i,1)
   }
   drop(event: CdkDragDrop<ITask[]>) {
     if (event.previousContainer === event.container) {
@@ -68,7 +59,6 @@ export class StatusplanComponent implements OnInit {
         event.currentIndex,
       );
     }
-  }
-  
+  }  
 }
   
