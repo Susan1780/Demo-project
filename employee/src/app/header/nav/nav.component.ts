@@ -5,11 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss']
 })
-export class NavComponent  {
-title="my-app";
-selectedMenu:any='HOME';
+export class NavComponent {
+  title = "my-app";
+  selectedMenu: any = 'HOME';
 
-goTo(paramText:string){
-  this.selectedMenu=paramText
-}
+  goTo(paramText: string) {
+    this.selectedMenu = paramText
+  }
 }
