@@ -1,21 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { StatusplanComponent } from './status/statusplan/statusplan.component';
-import { AddContactComponent } from './component/add-contact/add-contact/add-contact.component';
-import { ContactManagerComponent } from './component/contact-manager/contact-manager/contact-manager.component';
-import { EditContactComponent } from './component/edit-contact/edit-contact/edit-contact.component';
-import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound/pagenotfound.component';
-import { ViewContactComponent } from './component/view-contact/view-contact/view-contact.component';
 import { LoginComponent } from './component/Login/login/login.component';
+import { NavComponent } from './header/nav/nav.component';
+import { TimeCardComponent } from './component/time-card/time-card.component';
+
+
 
 const routes: Routes = [
-  {path:'',redirectTo:'/login',pathMatch:'full'},
-  {path:'login', component:LoginComponent},
-  {path:'add-contact', component:AddContactComponent},
-  {path:'view-contact',component:ViewContactComponent},
-  {path:'edit-contact',component:EditContactComponent},
-  {path:'contact-manager',component:ContactManagerComponent},
-  {path:'**',component:PagenotfoundComponent},
+  {path:'',redirectTo:'nav',pathMatch:'full'},
+  {path:'nav', component:NavComponent},
+  {path:'statusplan', component:StatusplanComponent},
+  {path:'time-card',component:TimeCardComponent},
+  {path:'login',component:LoginComponent}
+
+
 
 ];
 

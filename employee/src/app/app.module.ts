@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {MatSidenavModule} from '@angular/material/sidenav';
-
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,14 +21,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { StatusplanComponent } from './status/statusplan/statusplan.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 // import { MdbFormsModule } from 'mdb-angular-ui-kit/forms';
-import { AddContactComponent } from './component/add-contact/add-contact/add-contact.component';
-import { ContactManagerComponent } from './component/contact-manager/contact-manager/contact-manager.component';
-import { EditContactComponent } from './component/edit-contact/edit-contact/edit-contact.component';
-import { SpinnerComponent } from './component/spinner/spinner/spinner.component';
-import { ViewContactComponent } from './component/view-contact/view-contact/view-contact.component';
-import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound/pagenotfound.component';
 import { LoginComponent } from './component/Login/login/login.component';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './header/nav/nav.component';
 
@@ -37,17 +29,10 @@ import { NavComponent } from './header/nav/nav.component';
   declarations: [
     AppComponent,
     NavComponent,
-   
     TimeCardComponent,
     EmployeeDetailsComponent,
     NavbarComponent,
     StatusplanComponent,
-    AddContactComponent,
-    ContactManagerComponent,
-    EditContactComponent,
-    SpinnerComponent,
-    ViewContactComponent,
-    PagenotfoundComponent,
     LoginComponent
   ],
   imports: [
