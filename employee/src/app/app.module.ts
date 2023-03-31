@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatSidenavModule} from '@angular/material/sidenav';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,28 +13,33 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
-import { AddContactComponent } from './component/add-contact/add-contact/add-contact.component';
-import { ContactManagerComponent } from './component/contact-manager/contact-manager/contact-manager.component';
-import { EditContactComponent } from './component/edit-contact/edit-contact/edit-contact.component';
-import { SpinnerComponent } from './component/spinner/spinner/spinner.component';
-import { ViewContactComponent } from './component/view-contact/view-contact/view-contact.component';
-import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound/pagenotfound.component';
+import {MatInputModule} from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import {MatIconModule} from '@angular/material/icon';
+import { NavbarComponent } from './navbar/navbar.component';
+import { StatusplanComponent } from './status/statusplan/statusplan.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+// import { MdbFormsModule } from 'mdb-angular-ui-kit/forms';
+import { LoginComponent } from './component/Login/login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavComponent } from './header/nav/nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavComponent,
     TimeCardComponent,
     EmployeeDetailsComponent,
-    AddContactComponent,
-    ContactManagerComponent,
-    EditContactComponent,
-    SpinnerComponent,
-    ViewContactComponent,
-    PagenotfoundComponent
+    NavbarComponent,
+    StatusplanComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSidenavModule,
     MatSlideToggleModule,
     HttpClientModule,
     MatTableModule,
@@ -42,7 +48,12 @@ import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound/pag
     FormsModule,
     MatCardModule,
     MatDatepickerModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    MatButtonModule,
+    DragDropModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

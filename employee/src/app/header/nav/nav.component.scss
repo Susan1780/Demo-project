@@ -1,0 +1,107 @@
+// body {
+//     background-color: #fbfbfb;
+//     }
+//     @media (min-width: 991.98px) {
+//     main {
+//     padding-left: 240px;
+//     }
+//     }
+
+//     /* Sidebar */
+//     .sidebar {
+//     position: fixed;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     padding: 58px 0 0; /* Height of navbar */
+//     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+//     width: 240px;
+//     z-index: 600;
+//     }
+
+//     @media (max-width: 991.98px) {
+//     .sidebar {
+//     width: 100%;
+//     }
+//     }
+//     .sidebar .active {
+//     border-radius: 5px;
+//     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+//     }
+
+//     .sidebar-sticky {
+//     position: relative;
+//     top: 0;
+//     height: calc(100vh - 48px);
+//     padding-top: 0.5rem;
+//     overflow-x: hidden;
+//     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+//     }
+.nav-component {
+    width: 98%;
+}
+
+.mr-2 {
+    margin-left: 25px;
+}
+
+.menu-box {
+    height: 650px;
+    background-color: orange;
+    width: 65px;
+}
+
+.menu-box:hover {
+    width: 215px;
+    transition: 0.3s;
+}
+
+.menu-items {
+    list-style: none;
+    line-height: 60px;
+    padding-left: 0px;
+    height: 100%;
+
+}
+
+.menu-items li {
+    font-size: 10px;
+    font-weight: 600;
+    // padding-left: px;
+    cursor: pointer;
+}
+
+.menu-items li:hover {
+    background-color: rgb(126, 170, 219);
+    color: #7d7d7d;
+
+}
+
+.onActive {
+    color: #fcfcfc;
+    background-color: rgba(50, 150, 233, 0.692);
+    -webkit-box-shadow: 10px -1px 4px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px -1px 4px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px -1px 4px -3px rgba(0, 0, 0, 0.75);
+}
+
+.onActive:hover {
+    color: #fcfcfc !important;
+    background-color: rgba(50, 150, 233, 0.692) !important;
+}
+
+.menu-items li i {
+    margin-left: 25px;
+    font-size: 26px;
+    margin: 0px 20px 0px 0px;
+    position: relative;
+    top: 15px;
+    width: 35px;
+}
+
+.tabs {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 50px;
+}
