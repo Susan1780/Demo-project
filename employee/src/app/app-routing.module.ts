@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { StatusplanComponent } from './status/statusplan/statusplan.component';
 import { AddContactComponent } from './component/add-contact/add-contact/add-contact.component';
 import { ContactManagerComponent } from './component/contact-manager/contact-manager/contact-manager.component';
 import { EditContactComponent } from './component/edit-contact/edit-contact/edit-contact.component';
