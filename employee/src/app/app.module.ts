@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,9 +30,14 @@ import { ViewContactComponent } from './component/view-contact/view-contact/view
 import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound/pagenotfound.component';
 import { LoginComponent } from './component/Login/login/login.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavComponent } from './header/nav/nav.component';
+
 @NgModule({
   declarations: [
     AppComponent,
+    NavComponent,
+   
     TimeCardComponent,
     EmployeeDetailsComponent,
     NavbarComponent,
@@ -46,6 +53,8 @@ import { LoginComponent } from './component/Login/login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSidenavModule,
     MatSlideToggleModule,
     HttpClientModule,
     MatTableModule,
