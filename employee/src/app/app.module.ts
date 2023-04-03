@@ -24,6 +24,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { LoginComponent } from './component/Login/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './header/nav/nav.component';
+import { RegisterComponent } from './component/Register/register/register.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { NavComponent } from './header/nav/nav.component';
     EmployeeDetailsComponent,
     NavbarComponent,
     StatusplanComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

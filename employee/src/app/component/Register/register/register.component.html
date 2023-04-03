@@ -1,0 +1,16 @@
+<mat-card class="mat-card mt-5">
+  <form [formGroup]="regform" (ngSubmit)="login()">
+    <div class="cards mt-3">
+      <label for="uname">Username :
+        <input type="text" class="uname" name="uname" placeholder="Enter username" formControlName="name">
+      </label>
+      <div class="pass">
+        <label for="pass">password:
+          <input name="pass" class="pass" placeholder="enterpassword" formControlName="password">
+        </label>
+      </div>
+      <div class="btn btn-succes mt-3">
+        <button type="submit" [disabled]="!regform.valid" class="log btn" aria-pressed="true">Submit</button>
+        <button (click)="Register()" class="reg btn " aria-pressed="true">Register</button>
+      </div>
+    </div>

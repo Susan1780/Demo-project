@@ -13,13 +13,6 @@
       "date": "2023-03-29",
       "checkin": "9:30AM",
       "checkout": "09:30 PM"
-    },
-    {
-      "id": "3",
-      "name": "akash",
-      "date": "2023-03-29",
-      "checkin": "09:41",
-      "checkout": "16:41"
     }
   ]
 }

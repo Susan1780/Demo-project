@@ -4,15 +4,17 @@ import { StatusplanComponent } from './status/statusplan/statusplan.component';
 import { LoginComponent } from './component/Login/login/login.component';
 import { NavComponent } from './header/nav/nav.component';
 import { TimeCardComponent } from './component/time-card/time-card.component';
+import { RegisterComponent } from './component/Register/register/register.component';
 
 
 
 const routes: Routes = [
-  {path:'',redirectTo:'nav',pathMatch:'full'},
+  {path:'',redirectTo:'login',pathMatch:'full'},
   {path:'nav', component:NavComponent},
   {path:'statusplan', component:StatusplanComponent},
   {path:'time-card',component:TimeCardComponent},
-  {path:'login',component:LoginComponent}
+  {path:'login',component:LoginComponent},
+  {path:'register',component:RegisterComponent}
 
 
 
