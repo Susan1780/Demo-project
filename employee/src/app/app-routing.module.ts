@@ -5,8 +5,7 @@ import { LoginComponent } from './component/Login/login/login.component';
 import { NavComponent } from './header/nav/nav.component';
 import { TimeCardComponent } from './component/time-card/time-card.component';
 import { RegisterComponent } from './component/Register/register/register.component';
-
-
+import { CardComponent } from './component/HOME/card/card.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'login',pathMatch:'full'},
@@ -14,7 +13,8 @@ const routes: Routes = [
   {path:'statusplan', component:StatusplanComponent},
   {path:'time-card',component:TimeCardComponent},
   {path:'login',component:LoginComponent},
-  {path:'register',component:RegisterComponent}
+  {path:'register',component:RegisterComponent},
+  {path:'card',component:CardComponent}
 
 
 

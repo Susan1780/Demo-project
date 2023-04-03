@@ -25,6 +25,7 @@ import { LoginComponent } from './component/Login/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './header/nav/nav.component';
 import { RegisterComponent } from './component/Register/register/register.component';
+import { CardComponent } from './component/HOME/card/card.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { RegisterComponent } from './component/Register/register/register.compon
     NavbarComponent,
     StatusplanComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

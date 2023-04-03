@@ -11,5 +11,9 @@ export class NavComponent {
 
   goTo(paramText: string) {
     this.selectedMenu = paramText
-  }
+  } 
+   name="bala"
+  phone="9876454"
+  place="mkm"
+
 }
