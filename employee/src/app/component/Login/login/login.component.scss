@@ -1,7 +1,11 @@
 .mat-card{
   text-align: center;
-  background: local;
 
+}
+.mat-card{
+  background-image: linear-gradient(to left, #e6abab, #b0dde6);
+  border-radius: 10px;
+  margin-top: 10px;
 }
 .uname{
     margin-right: 10px;
@@ -10,3 +14,23 @@
     display: inline-block;
     padding: 10px 15px;
   }
+.pass {
+  margin-right: 10px;
+  border-radius: 10px ;
+  border-color: #ccc;
+  padding: 10px 15px;
+  margin-right: 2px;
+}
+
+.reg:hover {
+  background-color: #4CAF50;
+  color: white;
+  margin-left: 15px;
+}
+.log:hover {
+  background-color:rgb(4, 46, 75);
+  color: white;
+  margin-left: 15px;
+}
+
+

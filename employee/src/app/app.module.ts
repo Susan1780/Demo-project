@@ -24,6 +24,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { LoginComponent } from './component/Login/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './header/nav/nav.component';
+import { RegisterComponent } from './component/Register/register/register.component';
 import { CardComponent } from './component/HOME/card/card.component';
 
 @NgModule({
@@ -35,6 +36,7 @@ import { CardComponent } from './component/HOME/card/card.component';
     NavbarComponent,
     StatusplanComponent,
     LoginComponent,
+    RegisterComponent,
     CardComponent
   ],
   imports: [
